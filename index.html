@@ -9,45 +9,51 @@
   <title>Frontend Mentor | Contact form</title>
   <script src="./index.js"></script>
 </head>
-<body>
-  <div class="">
-    <h1>Contact Us</h1>
-    <div>
-      <form action="">
-        <div class="">
-          <label for="first_name">First Name *</label>
-          <input type="text" name="first_name" id="first_name">
+<body class="flex items-center justify-center w-screen h-screen bg-blue-200">
+  <div class=" flex flex-col bg-[#f1f1f1] w-[90%] sm:min-w-[70%] h-auto p-5 overflow-hiden rounded-[20px]">
+    <h1 class="text-3xl">Contact Us</h1>
+    <div class="w-full my-5">
+      <form class="w-[100%] flex flex-col gap-5">
+        <div class="w-full flex flex-col sm:flex-row gap-2">
+          <div class=" w-full sm:w-1/2 flex flex-col">
+            <label for="first_name">First Name *</label>
+            <input class="outline-none border rounded-[6px] focus:border-green-500 p-1" type="text" name="first_name" id="first_name">
+          </div>
+          <div class="w-full sm:w-1/2 flex flex-col">
+            <label for="last_name">Last Name *</label>
+            <input class="outline-none border rounded-[6px] focus:border-green-500 p-1"type="text" name="last_name" id="last_name">
+          </div>          
         </div>
-        <div class="">
-          <label for="last_name">Last Name *</label>
-          <input type="text" name="last_name" id="last_name">
-        </div>
-        <div>
+
+        <div class="w-full flex flex-col">
           <label for="email">Email Address *</label>
-          <input type="email" name="email" id="email">
+          <input class="outline-none border rounded-[6px] focus:border-green-500 p-1" type="email" name="email" id="email">
         </div>
-        <div>
+
+        <div class="w-full flex-col">
           <label for="">Query Type *</label>
-          <div>
-            <input type="radio" name="type" value="GeneralEnquiry"> <label for="">General Enquiry</label>
-          </div>
-          <div>
-            <input type="radio" name="type" value="SupportRequest"> <label for="">Support Request</label>
+          <div class="flex flex-col sm:flex-row gap-5 sm:gap-2">
+            <div class="border sm:w-1/2 rounded-[6px] py-3 px-2">
+              <input type="radio" name="type" value="GeneralEnquiry"> <label for="">General Enquiry</label>
+            </div>
+            <div class="border sm:w-1/2 rounded-[6px] py-3 px-2">
+              <input type="radio" name="type" value="SupportRequest"> <label for="">Support Request</label>
+            </div>            
           </div>
         </div>
 
-        <div>
+        <div class="flex flex-col">
           <label for="message">Message *</label>
-          <textarea name="message" id="message"></textarea>
+          <textarea class="outline-none border rounded-[6px] focus:border-green-500 p-2 h-[200px] sm:h-[100px]" name="message" id="message"></textarea>
         </div>
 
-        <div>
+        <div class="flex flex-row gap-5">
           <input type="checkbox" name="" id="">
           <label for="">I consent to being contacted by the team</label>
         </div>
 
-        <div>
-          <button type="submit">Submit</button>
+        <div class="w-full">
+          <button class="w-full p-2 bg-blue-400 rounded-[6px] text-white" type="submit">Submit</button>
         </div>
       </form>
     </div>
